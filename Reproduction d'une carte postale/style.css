@@ -1,0 +1,46 @@
+
+#Dimension{
+
+    width: 700px;
+    height: 400px;
+}
+
+
+#rectangle1{
+
+    width:355px;
+    height:215px;
+    border-block-color: black;
+
+}
+
+
+
+#rectangle{
+    width:300px;
+    height:200px;
+    border: solid;
+    border-block-color: black;
+
+
+
+}
+
+
+h3{
+    margin-top: -10px;
+    padding-left: 25%;
+    padding-top:10% ;
+}
+
+#ligne{ 
+    padding-left: 25%;
+    padding-right: 25%;
+    line-height: 5%;
+    
+}
+
+img{
+    height: 45px ;
+    width: 45px ;
+}

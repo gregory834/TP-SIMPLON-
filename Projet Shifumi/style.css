@@ -1,0 +1,321 @@
+
+.box{
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+}
+.cadre{
+    width: 90%;
+    height: 850px;
+    border: 0.1em solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    flex-direction: column;
+    background-color: #F1F3De;
+ }
+ .joueur{
+    width: 30% ;
+    height: 300px;
+    border: 0.2em solid #cd0a0a;
+ }
+ .ia{
+    width: 30%;
+    height: 300px;
+    border: 0.2em solid #cd0a0a;
+ }
+ 
+.cadre1{
+    display: flex;
+    width: 90%;
+    height: 850px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+/******* CSS de la Div du mot "VICTOIRE" si le joueur gagne ! */
+#victoire{
+    padding-top: 0px;
+    margin-bottom: 0px;
+    width: 165px;
+    height: 105px;
+    text-align: center;
+    font-weight: bold;
+    align-content: center;
+}
+/************ Compteur ******************/
+#compteur {
+    display: flex;   
+    justify-content: center;
+    margin-top: -25px;
+    font-weight: bold;
+}
+
+#compteurmatch {
+    display: flex;   
+    width: 100%;
+    height: 55px;
+    font-weight: bold;
+    /* background-color: black;  */
+    border-width: 3px;
+    border-style: solid;
+    border-color: #441313;  
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+
+ .cadre2{   
+    width: 70%;
+    height: 350px;
+    
+    display: flex;
+    margin-bottom: 60px;  
+    display: flex;
+    justify-content: space-around;   
+    flex-direction: row; 
+    align-content: space-around;
+    align-items: center;   
+}
+.titre{
+    display: flex;
+    margin-top: 25px;
+    
+    
+}
+.pierre{
+    width: 120px;
+    height: 90px;
+    border: solid 0.1em red;
+    align-content: space-around;
+    background-image: url(media/rock.png);
+    
+}
+.feuille{
+    width: 120px;
+    height: 90px;
+    border: solid 0.1em red;
+    background-image: url(media/paper.png);   
+}
+.ciseaux{
+    width: 120px;
+    height: 90px;
+    border: solid 0.1em red;  
+    background-image: url(media/scissors.png);  
+     
+}
+.img{
+    margin-left: 10px;
+}
+}
+.bloccentre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+    
+   
+}
+.vs{
+    text-align: center;
+    background-image: url(media/vsoffredim.png) no-repeat;
+    margin-bottom: 35px;
+    opacity: 0.9;
+}  
+.round{
+    text-align: center;
+    margin:0;
+    margin-bottom: 53px;
+}
+.h2{
+    text-align: center;
+     margin:0;
+     padding-top: 2px;
+}
+.nomjoueur{   
+     
+    width: 855px;
+    height: 72px;
+    margin-top:35px;
+    margin-bottom: -60px;
+}
+.nomdujoueur{
+    float: left;
+}
+.nomordinateur{
+    float: right;
+}
+
+/********************* BOUTON ************************/
+
+input[type=button], input[type=submit], input[type=reset], button, .button {
+	padding: 5px 15px;
+	margin: 3px 4px;
+	display: inline-block;
+	color: #ffffff;
+	font-size: 26px;
+	cursor: pointer;
+	background: #4095ff;
+	background: linear-gradient(top, #4095ff 0%, #277ce6 100%);
+	background: -moz-linear-gradient(top, #4095ff 0%, #277ce6 100%);
+	background: -webkit-linear-gradient(top, #4095ff 0%, #277ce6 100%);
+	background: -o-linear-gradient(top, #4095ff 0%, #277ce6 100%);
+	border: 1px solid #338bf6;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	-moz-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	-webkit-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	-o-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.50);
+}
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, button:hover, .button:hover {
+	background: linear-gradient(top, #5aafff 0%, #4095ff 100%);
+	background: -moz-linear-gradient(top, #5aafff 0%, #4095ff 100%);
+	background: -webkit-linear-gradient(top, #5aafff 0%, #4095ff 100%);
+	background: -o-linear-gradient(top, #5aafff 0%, #4095ff 100%);
+}
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active, button:active, .button:active{
+	opacity:0.8;
+}
+
+
+/****************************** Box LED ***********************************/
+
+.led{
+    
+    width: 1009px;
+    height: 28px;
+    margin-bottom: -29px;
+}
+               /**************partie gauche ****************/
+
+    .led-box {
+        height: 30px;
+        width: 25%;
+        margin: 10px 0;
+        float: left;   
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+  } 
+               /**************partie droite ****************/
+    .led-box2 {
+        height: 30px;
+        width: 25%;
+        margin: 10px 0;
+        float: right;   
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;    
+              } 
+                  
+              
+
+              /**************** LED ******************/
+
+  #led-green-j, #led-green-ia {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+   /* background-color: #ABFF00;*/
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px,
+     inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+     float: left;
+     
+     
+  }
+  
+  #led-yellow-j, #led-yellow-ia {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    /*background-color: #FF0;*/
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12px;
+   /* -webkit-animation: blinkYellow 1s infinite;
+    -moz-animation: blinkYellow 1s infinite;
+    -ms-animation: blinkYellow 1s infinite;
+    -o-animation: blinkYellow 1s infinite;
+    animation: blinkYellow 1s infinite;*/
+    float: left;
+    
+  }
+
+  #led-red-j, #led-red-ia {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    /*background-color: #F00;*/
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+    /*-webkit-animation: blinkRed 0.5s infinite;
+    -moz-animation: blinkRed 0.5s infinite;
+    -ms-animation: blinkRed 0.5s infinite;
+    -o-animation: blinkRed 0.5s infinite;
+    animation: blinkRed 0.5s infinite;*/
+    float: left;
+  }
+ 
+  /******** animation couleur rouge ***********/
+
+  @-webkit-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@-moz-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@-ms-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@-o-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+@keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
+    to { background-color: #F00; }
+}
+
+/******** animation couleur jaune ***********/
+
+@-webkit-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: #FF0; }
+}
+@-moz-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: #FF0; }
+}
+@-ms-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: #FF0; }
+}
+@-o-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: #FF0; }
+}
+@keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
+    to { background-color: #FF0; }
+}

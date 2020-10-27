@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIFUMI</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="box">
+
+
+        <div class="cadre">
+
+            <!-------------TITRE ---------------->
+
+            <div class="titre">
+                <img src="media/titre.png" alt="">
+            </div>
+
+
+            <!-----------------Led Box ------------------->
+
+            <div class="led">
+                <!--------------- partie gauche -------------->
+
+                <div class="led-box">
+                    <div id="led-green-j"></div>
+                    <div id="led-yellow-j"></div>
+                    <div id="led-red-j"></div>
+
+
+                </div>
+
+                <!----------- partie droite ------------->
+
+                <div class="led-box2">
+
+                    <div id="led-green-ia" ></div>
+                    <div id="led-yellow-ia"></div>
+                    <div id="led-red-ia"></div>
+
+                </div>
+
+            </div>
+
+            <div class="nomjoueur">
+
+                <div>
+                    <h2 id="utilisateur" class="nomdujoueur">Joueur</h2>
+                </div>
+
+                <div>
+                    <h2 class="nomordinateur">Ordinateur</h2>
+                </div>
+            </div>
+            <div class="cadre1">
+
+                <div id="choixjoueur" class="joueur"></div>
+
+                <!------------- Bloc centre ------------->
+
+                <div class="bloccentre">
+                    <div class="vs">
+                        <img src="media/vsoffredim.png" alt="">
+
+
+                    </div>
+
+                    <!------------------ Compteur --------------->
+                    <div id="compteur">
+                    <h1></h1>
+                    </div>     <!--J'ai créer un div avec un ID dans laquelle j'ai rajouté un compteur que je pourrais appelé et afficher dans le javascript  -->
+
+                    <div class="round">
+
+                        <button id="start" onclick="jouer()">
+                            <h2 style="margin: 0;">Start</h2>
+                        </button>
+
+                    </div>
+
+
+
+                    <!----- Compteur de nombre de match ----->
+                    <div id="compteurmatch"><h1>0</h1> </div>
+
+
+
+
+                </div>
+                <div class="ia" id="choixordinateur"></div>
+
+                 
+            </div>
+
+            <!----Div pour affichage " victoire " si le joueur remporte 3 manche -->
+                    
+            <div id="victoire"></div>
+
+            <!------------- Signe choix utilisateur -------------------->
+            <div class="cadre2">
+
+
+                <div class="pierre">
+
+                    <div class="img" onclick="signeutilisateur1()">
+                        <img src="media/rock.png" alt="" width="90px">
+                    </div>
+                </div>
+
+                <div class="feuille">
+
+                    <div class="img" onclick="signeutilisateur2()">
+                        <img src="media/paper.png" alt="" width="90px">
+                    </div>
+                </div>
+
+                <div class="ciseaux" onclick="signeutilisateur3()">
+
+                    <div class="img">
+                        <img src="media/scissors.png" alt="" width="90px">
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+  

@@ -1,0 +1,43 @@
+.voiture{
+    position: absolute;
+    z-index: 2;
+   
+}
+
+.rav{
+    
+   position: absolute;
+   top: 185px;
+   left: 276px;
+   z-index: 1;
+  
+
+
+}
+
+.rar{
+    position: absolute; 
+    top: 185px;
+    left: 847px;
+    z-index: 1;
+    
+    
+}
+
+
+.rotation{
+
+    animation-name: rotation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+  }
